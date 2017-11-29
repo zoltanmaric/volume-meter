@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>volume-meter example</title>
+    <link rel="stylesheet" href="style.css" />
     <style>
       * {
         box-sizing: border-box;
@@ -17,29 +18,13 @@
       body {
         padding: 50px;
       }
-      .container {
-        width: 100%;
-        height: 100%;
-        position: relative;
-      }
-      .left, 
-      .right {
-        width: 49%;
-        height: 100%;
-        background: #A00;
-        position: absolute;
-        bottom: 0;
-      }
-      .right {
-        left: 51%;
-        background: #0A0;
-      }
     </style>
   </head>
   <body>
-    <div class="container">
-      <div class="left"></div>
-      <div class="right"></div>
+    <div id="progress-text"></div>
+    <div id="progress-container">
+      <div id="progress"></div>
+      <div id="progress-max"></div>
     </div>
     <script type="text/javascript" src="build.js"></script>
   </body>
